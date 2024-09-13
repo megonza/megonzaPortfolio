@@ -1,0 +1,143 @@
+* {
+    font-family: 'DotGothic16', 'sans-serif';
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    width: 810px;
+    margin: 0 auto 10px;
+    background-image: url(../img/portfolio-bg.jpg);
+    background-size: cover;
+}
+
+/* ----- Navbar section ----- */
+.navbar-section {
+    margin-top: 20px;
+    margin-bottom: 12px;
+}
+.navbar-header {
+    background: linear-gradient(to bottom, #245edb 0%, #3f8cf3 9%, #245edb 18%, #245edb 92%, #333 100%);
+    color: #fff;
+    padding: 10px;
+    border-radius: 10px 10px 0 0;
+    border: 2px solid #1B44B8;
+}
+.navbar-header img {
+    width: 30px;
+    float: right;
+}
+.navbar {
+    display: flex;
+    border-left: 2px solid #1B44B8;
+    border-right: 2px solid #1B44B8;
+    border-bottom: 2px solid #1B44B8;
+    background-color: #60A5FA;
+}
+.navbar a {
+    text-decoration: none;
+    color: #fff;
+    border: 1px solid #003c74;
+    background: linear-gradient(180deg, #366EF3, #2D69F4 86%, #1A3EB4);
+    padding: 0.5em;
+    margin: 2px;
+    font-family: Verdana, sans-serif;
+    font-size: 15px;
+}
+.navbar a:hover {
+    background: linear-gradient(180deg,#1C35B4,#2450D7 86%,#1A3EB4);
+}
+.navbar img {
+    width: 25px;
+    margin: 3px;
+}
+
+/* ----- Projects section ----- */
+.header {                                        /* General style for headers */
+    background: linear-gradient(to bottom, #245edb 0%, #3f8cf3 9%, #245edb 18%, #245edb 92%, #333 100%);
+    color: #fff;
+    padding: 10px;
+    border-radius: 10px 10px 0 0;
+    border: 2px solid #1B44B8;
+}
+.header h4 {
+    margin: 2px;
+}
+
+.inner {                                         /* General style for inner windows */
+    background-color: #ddd;
+    border-left: 2px solid #1B44B8;
+    border-right: 2px solid #1B44B8;
+    border-bottom: 2px solid #1B44B8;
+    box-shadow: 5px 8px 8px #0006;
+}
+
+/* ----- Project items ----- */
+.project {
+    display: flex;
+    flex-direction: column;
+    background-color: #ddd;
+    padding: 15px;
+}
+.project h4 {
+    margin: 5px;
+}
+.project img {
+    border: 3px solid #1B44B8;
+    margin: 5px;
+}
+.project p {
+    padding: 10px;
+}
+.btn-goto {
+    font-family: 'Calibri';
+    padding: 3px 15px 3px 15px;
+    border: 2px solid #B9D0F0;
+    background-color: #fff;
+}
+.btn-goto:hover, .btn-goto:focus {
+    outline: 0;
+    border: 2px solid #B9D0F0;
+}
+.btn-goto:active {
+    background: #dad3c9;
+    background: -moz-linear-gradient(top, #dad3c9 0%, #e7e0d8 6%, #f8f3ef 18%, #f7f3f0 53%, #f8f7f5 59%, #fbf9fa 82%, #fffdfe 88%, #ffffff 94%, #f6f6f6 100%);
+    background: -webkit-linear-gradient(top, #dad3c9 0%, #e7e0d8 6%, #f8f3ef 18%, #f7f3f0 53%, #f8f7f5 59%, #fbf9fa 82%, #fffdfe 88%, #ffffff 94%, #f6f6f6 100%);
+    background: linear-gradient(to bottom, #dad3c9 0%, #e7e0d8 6%, #f8f3ef 18%, #f7f3f0 53%, #f8f7f5 59%, #fbf9fa 82%, #fffdfe 88%, #ffffff 94%, #f6f6f6 100%);
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#dad3c9', endColorstr='#f6f6f6', GradientType=0);
+  }
+
+.language-item {
+    display: inline-flex;
+    background-color: #fff;
+    margin: 0 0 0 3px;
+    border-radius: 5px;
+}
+.language-item svg {
+    width: 20px;
+    margin: 0 5px 0 5px;
+}
+
+/* ----- Other details ----- */
+.separator {
+    padding: 2px;
+    background-color: #ccc;
+    width: 50%;
+    margin-left: 24%;
+}
+
+
+/* ---------- RESPONSIVE FOR MOBILE ---------- */
+/* ----- Navbar section ----- */
+@media only screen and (max-width: 769px) {
+    .navbar-section {
+        width: 90vw;
+    }
+}
+
+/* ----- Projects section ----- */
+@media only screen and (max-width: 769px) {
+    .projects-section {
+        width: 90vw;
+    }
+}

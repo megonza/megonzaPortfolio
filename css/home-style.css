@@ -1,0 +1,187 @@
+* {
+    font-family: 'DotGothic16', 'sans-serif';
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    width: 810px;
+    margin: 0 auto 10px;
+    background-image: url(../img/portfolio-bg.jpg);
+    background-size: cover;
+}
+
+/* ----- Navbar section ----- */
+.navbar-section {
+    margin-top: 20px;
+    margin-bottom: 12px;
+}
+.navbar-header {
+    background: linear-gradient(to bottom, #245edb 0%, #3f8cf3 9%, #245edb 18%, #245edb 92%, #333 100%);
+    color: #fff;
+    padding: 10px;
+    border-radius: 10px 10px 0 0;
+    border: 2px solid #1B44B8;
+}
+.navbar-header img {
+    width: 30px;
+    float: right;
+}
+.navbar {
+    display: flex;
+    border-left: 2px solid #1B44B8;
+    border-right: 2px solid #1B44B8;
+    border-bottom: 2px solid #1B44B8;
+    background-color: #60A5FA;
+}
+.navbar a {
+    text-decoration: none;
+    color: #fff;
+    border: 1px solid #003c74;
+    background: linear-gradient(180deg, #366EF3, #2D69F4 86%, #1A3EB4);
+    padding: 0.5em;
+    margin: 2px;
+    font-family: Verdana, sans-serif;
+    font-size: 15px;
+}
+.navbar a:hover {
+    background: linear-gradient(180deg,#1C35B4,#2450D7 86%,#1A3EB4);
+}
+.navbar img {
+    width: 25px;
+    margin: 3px;
+}
+
+/* ----- Home section ----- */
+/* --- Contains properties for all headers! --- */
+.info-container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.info-left {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    padding: 10px;
+}
+
+.header {                                        /* General style for headers */
+    background: linear-gradient(to bottom, #245edb 0%, #3f8cf3 9%, #245edb 18%, #245edb 92%, #333 100%);
+    color: #fff;
+    padding: 10px;
+    border-radius: 10px 10px 0 0;
+    border: 2px solid #1B44B8;
+}
+.header h4 {
+    margin: 2px;
+}
+
+.profile {                                       /* Profile and welcome window */
+    background: #fff;
+    padding: 17px;
+    box-shadow: 5px 8px 8px #0006;
+}
+.profile img {
+    width: 150px;
+    border-radius: 50%;
+    margin-right: 5px;
+    float: left;
+}
+.welcome-message {
+    text-align: center;
+}
+
+.table-info {                                    /* Social media table */
+    display: table;                               
+    background-color: #ccc;
+    width: 100%;
+}
+
+.table-section {                                 /* General style for tables */
+    margin-top: 2em;
+}
+.table-section tr {
+    display: flex;
+    flex-direction: column;
+}
+.table-section td:first-child {
+    padding: 5px;
+    color: #1B44B8;
+    font-weight: bold;
+    border-bottom: 2px solid #aaa ;
+}
+.table-section p {
+    padding: 5px;
+}
+.table-section a {
+    text-decoration: none;
+    padding: 5px;
+    color: #000;
+}
+.inner {                                         /* General style for inner windows */
+    background-color: #fff;
+    border-left: 2px solid #1B44B8;
+    border-right: 2px solid #1B44B8;
+    border-bottom: 2px solid #1B44B8;
+    box-shadow: 5px 8px 8px #0006;
+}
+
+.info-right {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    padding: 10px;
+}
+
+.about {
+    margin-bottom: 10px;
+} 
+.about p {
+    padding: 20px;
+}
+
+.skills {
+    margin-top: 1em;
+}
+
+.skills-section {
+    background-color: #ccc;
+}
+.skills-section h3 {
+    padding: 10px;
+}
+
+
+.skills-item {
+    display: inline-flex;
+    background-color: #fff;
+    padding: 5px;
+    margin: 0 0 5px 3px;
+    border-radius: 5px;
+}
+.skills-item svg {
+    width: 20px;
+    margin: 0 5px 0 5px;
+}
+
+/* ---------- RESPONSIVE FOR MOBILE ---------- */
+/* ----- Navbar section ----- */
+@media only screen and (max-width: 769px) {
+    .navbar-section {
+        width: 90vw;
+    }
+}
+
+/* ----- Home section ----- */
+@media only screen and (max-width: 769px) {
+    .info-container {
+        display: block;
+        width: 90vw;
+    }
+
+    .info-left, .info-right {
+        width: 90vw;
+    }
+}
