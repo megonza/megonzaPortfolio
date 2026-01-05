@@ -1,5 +1,5 @@
 * {
-    font-family: 'DotGothic16', 'sans-serif';
+    font-family: 'Inter Tight', 'sans-serif';
     box-sizing: border-box;
     margin: 0;
 }
@@ -128,15 +128,16 @@ body {
 
 
 /* ---------- RESPONSIVE FOR MOBILE ---------- */
-/* ----- Navbar section ----- */
 @media only screen and (max-width: 769px) {
+    body {
+        width: 100vw;
+    }
+    /* ----- Navbar section ----- */
     .navbar-section {
         width: 90vw;
     }
-}
 
 /* ----- Projects section ----- */
-@media only screen and (max-width: 769px) {
     .projects-section {
         width: 90vw;
     }
